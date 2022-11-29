@@ -103,7 +103,7 @@
      * @enum {number}
      */
     Runner.config = {
-        ACCELERATION: 0.001,
+        ACCELERATION: 0.0011, /* was 0.001 */
         BG_CLOUD_SPEED: 0.2,
         BOTTOM_PAD: 10,
         CLEAR_TIME: 3000,
@@ -113,16 +113,16 @@
         GRAVITY: 0.6,
         INITIAL_JUMP_VELOCITY: 12,
         INVERT_FADE_DURATION: 12000,
-        INVERT_DISTANCE: 700,
+        INVERT_DISTANCE: 50,
         MAX_BLINK_COUNT: 3,
         MAX_CLOUDS: 6,
         MAX_OBSTACLE_LENGTH: 3,
         MAX_OBSTACLE_DUPLICATION: 2,
-        MAX_SPEED: 13,
+        MAX_SPEED: 16, /* was 13 */
         MIN_JUMP_HEIGHT: 35,
         MOBILE_SPEED_COEFFICIENT: 1.2,
         RESOURCE_TEMPLATE_ID: 'audio-resources',
-        SPEED: 6,
+        SPEED: 4, /* was 6 */
         SPEED_DROP_COEFFICIENT: 3
     };
 
@@ -2246,11 +2246,11 @@
             // Update body background, invert canvas
             if (activated) {
                 document.getElementById("t").style.background = "rgb(16,16,18)";
-                document.getElementById("main-frame-error").style.filter = "invert(100%)";
+                document.getElementById("main-frame-error").style.filter = "invert(100%) sepia(1)";
                 document.getElementById("message").style.visibility = "none";
             } else {
                 document.getElementById("t").style.background = "white";
-                document.getElementById("main-frame-error").style.filter = "invert(0%)";
+                document.getElementById("main-frame-error").style.filter = "invert(0%) sepia(0)";
             }
             // Moon phase.
             if (activated && this.opacity == 0) {
