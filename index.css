@@ -1,5 +1,12 @@
 /* night / day cycle */
 
+.hello {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #t {
   transition: background 2.5s;
 }
@@ -12,6 +19,7 @@
   margin-top: 100px;
   color: rgb(90, 90, 90);
   font-family: helvetica, monospace;
+  font-size: 14px;
 }
 
 #message h2 {
@@ -153,9 +161,9 @@ body {
   }
 }
 
-@media (max-width: 240px) {
+@media (max-width: 640px) {
   .interstitial-wrapper {
     overflow: inherit;
-    padding: 0 8px;
+    padding: 0 20px;
   }
 }
