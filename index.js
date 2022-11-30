@@ -485,6 +485,12 @@
                 // }
                 this.playing = true;
                 this.activated = true;
+                var x = window.matchMedia("(max-height: 500px)");
+                if (x.matches) {
+                    document.getElementById("message").style.visibility = "hidden";
+                } else {
+                    document.getElementById("message").style.display = "visible";
+                }
             } else if (this.crashed) {
                 this.restart();
             }
