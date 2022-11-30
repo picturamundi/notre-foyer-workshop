@@ -107,8 +107,7 @@
 
 @media (max-height: 500px) {
   #message {
-    margin-top: -25px;
-    margin-left: 150px;
+    display: none;
   }
 }
 
