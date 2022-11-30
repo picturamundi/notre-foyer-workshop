@@ -22,17 +22,52 @@
   width: calc(100% + 30px);
   height: 100px;
   margin-left: -30px;
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+#dishes,
+#dishes div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  opacity: 0.4;
-  overflow: hidden;
+  flex-grow: 3;
 }
 
 #dishes div img {
   position: absolute;
   bottom: 0px;
   image-rendering: pixelated;
+}
+
+.w17 {
+  width: 32px;
+}
+
+.w25 {
+  width: 50px;
+}
+
+.w50 {
+  width: 100px;
+}
+
+.w75 {
+  width: 150px;
+}
+
+@media (max-width: 900px) {
+  #dishes .large-dishes {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+
+  #dishes .large-dishes,
+  #dishes .medium-dishes {
+    display: none;
+  }
 }
 
 /* night / day cycle */
