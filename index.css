@@ -1,18 +1,8 @@
-/* night / day cycle */
-
 .hello {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-#t {
-  transition: background 2.5s;
-}
-
-#main-frame-error {
-  transition: filter 2.5s;
 }
 
 #message {
@@ -24,6 +14,39 @@
 
 #message h2 {
   color: rgb(40, 40, 40);
+}
+
+#dishes {
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% + 30px);
+  height: 100px;
+  margin-left: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+#dishes div img {
+  position: absolute;
+  bottom: 0px;
+  image-rendering: pixelated;
+}
+
+/* night / day cycle */
+
+#t {
+  transition: background 2.5s;
+}
+
+#main-frame-error {
+  transition: filter 2.5s;
+}
+
+#dishes {
+  transition: filter 2.5s;
 }
 
 html,

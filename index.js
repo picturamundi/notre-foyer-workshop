@@ -2247,10 +2247,12 @@
             if (activated) {
                 document.getElementById("t").style.background = "rgb(16,16,18)";
                 document.getElementById("main-frame-error").style.filter = "invert(100%) sepia(1)";
+                document.getElementById("dishes").style.filter = "invert(100%) sepia(1)";
                 document.getElementById("message").style.visibility = "none";
             } else {
                 document.getElementById("t").style.background = "white";
                 document.getElementById("main-frame-error").style.filter = "invert(0%) sepia(0)";
+                document.getElementById("dishes").style.filter = "invert(0%) sepia(0)";
             }
             // Moon phase.
             if (activated && this.opacity == 0) {
