@@ -44,6 +44,10 @@
   width: 32px;
 }
 
+.w18 {
+  width: 33px;
+}
+
 .w25 {
   width: 50px;
 }
@@ -58,6 +62,10 @@
 
 @media (max-width: 650px) or (max-height: 650px) {
   .w17 {
+    width: 26px;
+  }
+
+  .w18 {
     width: 26px;
   }
 
@@ -77,6 +85,10 @@
 @media (max-width: 450px) or (max-height: 450px) {
   .w17 {
     width: 17px;
+  }
+
+  .w18 {
+    width: 18px;
   }
 
   .w25 {
